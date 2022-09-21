@@ -12,9 +12,9 @@ export class RestablecerPage implements OnInit {
 
   async presentAlert(){
     const alert = await this.alertController.create({
-      header: 'Cuidado!',
+      header: 'Estimado Alumno',
       subHeader: '',
-      message: 'Se enviará un link a su correo para poder recuperar el nombre de usuario',
+      message: 'Se le enviará un link a su correo institucional para poder recuperar su contraseña',
       buttons: ['ENTENDIDO'],
     });
     await alert.present();
